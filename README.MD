@@ -1,3 +1,4 @@
+Aluno: Alessandro de Lucena Silva - 01613750
 # Raciocínio para teste das funções:
 
 ### Para testar a função de fatoriais:
