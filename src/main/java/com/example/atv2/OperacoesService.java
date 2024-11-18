@@ -21,7 +21,7 @@ public class OperacoesService {
     }
 
     public static int maxValue(int[] list){
-        if(list.length == 0){
+        if(list.length == 0 || list == null){
             throw new IllegalArgumentException("The expected value is a list of valid integers");
         }
 
@@ -35,7 +35,7 @@ public class OperacoesService {
     }
 
     public static int getVowelNumber(String text) {
-        if(text.isEmpty()){
+        if(text.isEmpty() || text == null){
             throw new IllegalArgumentException("The argument must contain a text");
         }
 
