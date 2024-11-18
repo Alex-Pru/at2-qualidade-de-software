@@ -11,8 +11,13 @@ public class OperacoesServiceTests {
     }
 
     @Test
-    void testExceptionFactorialGetter(){
+    void testNullFactorialGetter(){
         assertThrows(IllegalArgumentException.class, () -> OperacoesService.getFactorial(0));
+    }
+
+    @Test
+    void testBigValueFactorialGetter(){
+        assertThrows(IllegalArgumentException.class, () -> OperacoesService.getFactorial(21));
     }
 
     @Test

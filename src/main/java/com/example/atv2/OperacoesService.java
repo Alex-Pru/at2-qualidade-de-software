@@ -9,6 +9,10 @@ public class OperacoesService {
             throw new IllegalArgumentException("The selected number must be a positive value");
         }
 
+        if(n >= 21){
+            throw new IllegalArgumentException("The function can't process numbers bigger than 21");
+        }
+
         long fact = 1;
         for (int i = 2; i <= n; i++) {
             fact = fact * i;
